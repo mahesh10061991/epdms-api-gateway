@@ -17,7 +17,7 @@ spring:
                 - id: EPDMS-REACTIVE-APP
                   uri: lb://EPDMS-REACTIVE-APP
                   predicates:
-                      - Path=/message/**
+                      - Path=/message/**, /api/employee/**
     main:
         allow-circular-references: true
     r2dbc:
